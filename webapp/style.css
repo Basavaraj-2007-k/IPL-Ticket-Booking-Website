@@ -1,0 +1,107 @@
+
+/* Body */
+body {
+    background-color: lightgray;
+    color: black;
+    font-family: Arial;
+    margin: 0;
+}
+
+/* Navigation Bar */
+header {
+    background-color: navy;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, navy, blue);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin-top: 60px;
+}
+
+/* Buttons */
+.btn {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 10px;
+}
+
+th, td {
+    border: 1px solid gray;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: navy;
+    color: white;
+}
+
+/* Forms */
+form {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+input, select {
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+/* Cards */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin: 15px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+/* Footer */
+footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 5px gray;
+}
