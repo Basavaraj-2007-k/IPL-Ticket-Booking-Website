@@ -12,7 +12,8 @@ header {
     background-color: navy;
     color: white;
     padding: 15px;
-    position: fixed;
+    position: relative;
+    width: 100%;
     top: 0;
     width: 100%;
 }
@@ -104,4 +105,14 @@ footer {
     border-radius: 5px;
     border: 1px solid gray;
     box-shadow: 2px 2px 5px gray;
+}
+
+/* Booking page spacing fix */
+#booking {
+    margin-top: 30px;
+    padding: 25px;
+}
+
+#booking form {
+    margin-top: 20px;
 }
