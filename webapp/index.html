@@ -60,6 +60,7 @@
         <h2>Match Schedule</h2>
 
         <label>Filter by Team:</label>
+
         <select>
             <option>All Teams</option>
             <option>RCB</option>
@@ -88,7 +89,9 @@
                 <td>800</td>
                 <td>2000</td>
                 <td>5000</td>
-                <td><a href="#booking">Book</a></td>
+                <td>
+                    <button class="book-btn">Book</button>
+                </td>
             </tr>
 
             <tr>
@@ -99,7 +102,9 @@
                 <td>1000</td>
                 <td>2500</td>
                 <td>6000</td>
-                <td><a href="#booking">Book</a></td>
+                <td>
+                    <button class="book-btn">Book</button>
+                </td>
             </tr>
 
             <tr>
@@ -110,7 +115,9 @@
                 <td>900</td>
                 <td>2200</td>
                 <td>5500</td>
-                <td><a href="#booking">Book</a></td>
+                <td>
+                    <button class="book-btn">Book</button>
+                </td>
             </tr>
         </table>
     </section>
@@ -121,6 +128,7 @@
 
         <form>
             <label>Choose Match:</label>
+
             <select>
                 <option>RCB vs CSK</option>
                 <option>MI vs KKR</option>
@@ -130,6 +138,7 @@
             <br><br>
 
             <label>Stand Category:</label>
+
             <select>
                 <option>General</option>
                 <option>Premium</option>
@@ -164,6 +173,7 @@
         <!-- Booking Summary -->
         <div class="card">
             <h3>Booking Summary</h3>
+
             <p>Match: Not Selected</p>
             <p>Category: Not Selected</p>
             <p>Number of Tickets: 0</p>
@@ -193,6 +203,7 @@
 
         <div class="card">
             <h3>1. Entry Time</h3>
+
             <p>
                 Spectators should arrive at the stadium at least
                 one hour before the match starts.
@@ -201,6 +212,7 @@
 
         <div class="card">
             <h3>2. Seating Rules</h3>
+
             <p>
                 Spectators must sit in their assigned seats and
                 follow the instructions of stadium staff.
@@ -209,6 +221,7 @@
 
         <div class="card">
             <h3>3. Maintain Cleanliness</h3>
+
             <p>
                 Keep the stadium clean and use the dustbins
                 provided inside the stadium.
@@ -223,6 +236,12 @@
             All Rights Reserved.
         </p>
     </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <!-- JavaScript File -->
+    <script src="app.js"></script>
 
 </body>
 </html>
