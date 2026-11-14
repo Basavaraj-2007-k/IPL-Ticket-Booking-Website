@@ -9,13 +9,13 @@ body {
 
 /* Navigation Bar */
 header {
-    background-color: navy;
+    background-color: rgb(36, 36, 38);
     color: white;
     padding: 15px;
     position: relative;
     width: 100%;
+    box-sizing: border-box;
     top: 0;
-    width: 100%;
 }
 
 nav a {
@@ -30,11 +30,10 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to right, navy, blue);
+    background: linear-gradient(to right, navy, rgb(97, 97, 226));
     color: white;
     text-align: center;
     padding: 100px 20px;
-    margin-top: 60px;
 }
 
 /* Buttons */
@@ -45,6 +44,25 @@ nav a:hover {
     border-radius: 5px;
     text-decoration: none;
     margin: 10px;
+    display: inline-block;
+}
+
+button {
+    background-color: navy;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+/* Sections */
+section {
+    padding: 25px;
 }
 
 /* Tables */
@@ -54,7 +72,6 @@ table {
     border-collapse: collapse;
     margin: 20px 0;
     box-shadow: 2px 2px 5px gray;
-    border-radius: 10px;
 }
 
 th, td {
@@ -85,6 +102,10 @@ input, select {
     border: 1px solid gray;
 }
 
+input:focus, select:focus {
+    outline: 2px solid orange;
+}
+
 /* Cards */
 .card {
     background-color: white;
@@ -95,25 +116,27 @@ input, select {
     box-shadow: 2px 2px 5px gray;
 }
 
+/* Booking Summary */
+#summary {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+#summary h3 {
+    color: navy;
+}
+
+#totalAmount {
+    color: green;
+    font-weight: bold;
+}
+
 /* Footer */
 footer {
-    background-color: navy;
+    background-color: rgb(5, 5, 36);
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-    border: 1px solid gray;
-    box-shadow: 2px 2px 5px gray;
-}
-
-/* Booking page spacing fix */
-#booking {
-    margin-top: 30px;
-    padding: 25px;
-}
-
-#booking form {
     margin-top: 20px;
 }
 
@@ -135,25 +158,15 @@ footer {
 /* Show Toast */
 .toast.show {
     visibility: visible;
-    animation: fadeIn 0.5s, fadeOut 0.5s 2.5s;
+    animation: fadeIn 0.5s;
 }
 
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
-
-@keyframes fadeOut {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
-
