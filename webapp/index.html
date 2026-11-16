@@ -1,10 +1,19 @@
 
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+=======
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+>>>>>>> 631204f8628b486bfdb8c49587fde3b375c3adf1
     <title>IPL Ticket Booking Website</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -26,14 +35,18 @@
 
     <!-- Hero Section -->
     <section class="hero">
+
         <h1>Experience The Stadium Energy Live!</h1>
 
         <a href="#matches" class="btn">View Schedule</a>
+
         <a href="#booking" class="btn">Book Ticket</a>
+
     </section>
 
     <!-- About IPL -->
     <section id="about">
+
         <h2>About IPL 2026</h2>
 
         <p>
@@ -42,6 +55,7 @@
         </p>
 
         <h3>Popular Teams</h3>
+
         <ul>
             <li>RCB</li>
             <li>CSK</li>
@@ -51,16 +65,19 @@
         </ul>
 
         <h3>Popular Match Venues</h3>
+
         <ul>
             <li>Bengaluru</li>
             <li>Mumbai</li>
             <li>Chennai</li>
             <li>Hyderabad</li>
         </ul>
+
     </section>
 
     <!-- Match Schedule -->
     <section id="matches">
+
         <h2>Match Schedule</h2>
 
         <label for="teamFilter">Filter by Team:</label>
@@ -75,6 +92,7 @@
             <option value="RR">RR</option>
         </select>
 
+<<<<<<< HEAD
         <!-- Grid and List Buttons -->
         <div class="view-buttons">
             <button id="gridBtn" class="active">Grid View</button>
@@ -120,32 +138,121 @@
         </div>
 
         <p id="noMatches" hidden>No matches found.</p>
+=======
+        <table border="1">
+
+            <tr>
+                <th>Match Number</th>
+                <th>Teams</th>
+                <th>Date & Time</th>
+                <th>Venue</th>
+                <th>General</th>
+                <th>Premium</th>
+                <th>VIP</th>
+                <th>Action</th>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <td>RCB vs CSK</td>
+                <td>15 May 2026, 7:30 PM</td>
+                <td>Bengaluru</td>
+                <td>800</td>
+                <td>2000</td>
+                <td>5000</td>
+                <td>
+                    <button type="button" class="book-btn">Book</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>MI vs KKR</td>
+                <td>16 May 2026, 7:30 PM</td>
+                <td>Mumbai</td>
+                <td>1000</td>
+                <td>2500</td>
+                <td>6000</td>
+                <td>
+                    <button type="button" class="book-btn">Book</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>SRH vs RR</td>
+                <td>17 May 2026, 7:30 PM</td>
+                <td>Hyderabad</td>
+                <td>900</td>
+                <td>2200</td>
+                <td>5500</td>
+                <td>
+                    <button type="button" class="book-btn">Book</button>
+                </td>
+            </tr>
+
+        </table>
+
+>>>>>>> 631204f8628b486bfdb8c49587fde3b375c3adf1
     </section>
 
     <!-- Ticket Booking Form -->
     <section id="booking">
+
         <h2>Ticket Booking Form</h2>
 
         <form id="bookingForm">
+<<<<<<< HEAD
 
             <label for="matchSelect">Choose Match:</label>
             <select id="matchSelect" required>
                 <option value="RCB vs CSK">RCB vs CSK</option>
                 <option value="MI vs KKR">MI vs KKR</option>
                 <option value="SRH vs RR">SRH vs RR</option>
+=======
+
+            <label for="match">Choose Match:</label>
+
+            <select id="match" name="match" required>
+
+                <option value="">-- Select Match --</option>
+
+                <option value="RCB vs CSK">RCB vs CSK</option>
+
+                <option value="MI vs KKR">MI vs KKR</option>
+
+                <option value="SRH vs RR">SRH vs RR</option>
+
+>>>>>>> 631204f8628b486bfdb8c49587fde3b375c3adf1
             </select>
 
             <br><br>
 
+<<<<<<< HEAD
             <label for="standSelect">Stand Category:</label>
             <select id="standSelect" required>
                 <option value="General">General</option>
                 <option value="Premium">Premium</option>
                 <option value="VIP">VIP</option>
+=======
+            <label for="stand">Stand Category:</label>
+
+            <select id="stand" name="stand" required>
+
+                <option value="">-- Select Stand --</option>
+
+                <option value="General">General</option>
+
+                <option value="Premium">Premium</option>
+
+                <option value="VIP">VIP</option>
+
+>>>>>>> 631204f8628b486bfdb8c49587fde3b375c3adf1
             </select>
 
             <br><br>
 
+<<<<<<< HEAD
             <label for="ticketQuantity">Number of Tickets:</label>
             <input type="number" id="ticketQuantity" min="1" value="1" required>
 
@@ -163,28 +270,111 @@
 
             <label for="customerPhone">Phone Number:</label>
             <input type="tel" id="customerPhone" placeholder="Enter Phone Number" required>
+=======
+            <label for="tickets">Number of Tickets:</label>
+
+            <input type="number"
+                   id="tickets"
+                   name="tickets"
+                   min="1"
+                   max="10"
+                   value="1"
+                   required>
+
+            <br><br>
+
+            <label for="name">Full Name:</label>
+
+            <input type="text"
+                   id="name"
+                   name="name"
+                   placeholder="Enter your name"
+                   required
+                   minlength="3">
+
+            <br><br>
+
+            <label for="email">Email:</label>
+
+            <input type="email"
+                   id="email"
+                   name="email"
+                   placeholder="Enter your email"
+                   required>
+
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+
+            <input type="tel"
+                   id="phone"
+                   name="phone"
+                   placeholder="Enter 10 digit phone number"
+                   pattern="[0-9]{10}"
+                   required>
+
+            <br><br>
+
+            <p><strong>Booking Preference:</strong></p>
+
+            <input type="radio"
+                   id="family"
+                   name="preference"
+                   value="Family Seating">
+
+            <label for="family">Family Seating</label>
+
+            <input type="radio"
+                   id="regular"
+                   name="preference"
+                   value="Regular Seating">
+
+            <label for="regular">Regular Seating</label>
+>>>>>>> 631204f8628b486bfdb8c49587fde3b375c3adf1
 
             <br><br>
 
             <button type="submit">Confirm Booking</button>
 
+<<<<<<< HEAD
+=======
+            <button type="reset">Reset</button>
+
+>>>>>>> 631204f8628b486bfdb8c49587fde3b375c3adf1
         </form>
 
-        <!-- Booking Summary -->
-        <div class="card">
+        <!-- Booking Summary Card -->
+        <div class="card" id="summary">
+
             <h3>Booking Summary</h3>
 
+<<<<<<< HEAD
             <p>Match: <span id="summaryMatch">RCB vs CSK</span></p>
             <p>Category: <span id="summaryStand">General</span></p>
             <p>Number of Tickets: <span id="summaryQuantity">1</span></p>
             <p>Total Amount: ₹<span id="summaryTotal">800</span></p>
+=======
+            <p>Match: <span id="summaryMatch">Not Selected</span></p>
+
+            <p>Category: <span id="summaryStand">Not Selected</span></p>
+
+            <p>Number of Tickets: <span id="summaryTickets">0</span></p>
+
+            <p>Price Per Ticket: ₹<span id="summaryPrice">0</span></p>
+
+            <h3>Total Amount: ₹<span id="totalAmount">0</span></h3>
+
+>>>>>>> 631204f8628b486bfdb8c49587fde3b375c3adf1
         </div>
+
     </section>
 
     <!-- My Bookings -->
     <section id="mybookings">
+
         <h2>My Ticket Bookings</h2>
 
+<<<<<<< HEAD
         <table>
             <thead>
                 <tr>
@@ -200,12 +390,29 @@
         </table>
 
         <p id="emptyBookings">No bookings available.</p>
+=======
+        <table border="1">
+
+            <tr>
+                <th>Match</th>
+                <th>Category</th>
+                <th>Number of Tickets</th>
+                <th>Name</th>
+            </tr>
+
+        </table>
+
+        <p>No bookings available.</p>
+
+>>>>>>> 631204f8628b486bfdb8c49587fde3b375c3adf1
     </section>
 
     <!-- Guidelines -->
     <section id="guidelines">
+
         <h2>IPL Stadium Guidelines</h2>
 
+<<<<<<< HEAD
         <div class="guidelines-grid">
 
             <div class="card">
@@ -232,21 +439,62 @@
                 </p>
             </div>
 
+=======
+        <div class="card">
+
+            <h3>1. Entry Time</h3>
+
+            <p>
+                Spectators should arrive at the stadium at least
+                one hour before the match starts.
+            </p>
+
         </div>
+
+        <div class="card">
+
+            <h3>2. Seating Rules</h3>
+
+            <p>
+                Spectators must sit in their assigned seats and
+                follow the instructions of stadium staff.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>3. Maintain Cleanliness</h3>
+
+            <p>
+                Keep the stadium clean and use the dustbins
+                provided inside the stadium.
+            </p>
+
+>>>>>>> 631204f8628b486bfdb8c49587fde3b375c3adf1
+        </div>
+
     </section>
 
     <!-- Footer -->
     <footer>
+
         <p>
             &copy; 2026 IPL Ticket Booking Website.
             All Rights Reserved.
         </p>
+
     </footer>
 
     <!-- Toast Notification -->
     <div id="toast" class="toast"></div>
 
+<<<<<<< HEAD
+=======
+    <!-- JavaScript -->
+>>>>>>> 631204f8628b486bfdb8c49587fde3b375c3adf1
     <script src="app.js"></script>
 
 </body>
+
 </html>

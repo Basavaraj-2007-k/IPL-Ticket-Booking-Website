@@ -13,6 +13,7 @@ header {
     color: white;
     padding: 15px;
     position: relative;
+<<<<<<< HEAD
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,6 +28,11 @@ nav {
     display: flex;
     align-items: center;
     gap: 15px;
+=======
+    width: 100%;
+    box-sizing: border-box;
+    top: 0;
+>>>>>>> 631204f8628b486bfdb8c49587fde3b375c3adf1
 }
 
 nav a {
@@ -67,6 +73,25 @@ nav a:hover {
     border-radius: 5px;
     text-decoration: none;
     margin: 10px;
+    display: inline-block;
+}
+
+button {
+    background-color: navy;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+/* Sections */
+section {
+    padding: 25px;
 }
 
 button {
@@ -95,7 +120,6 @@ table {
     border-collapse: collapse;
     margin: 20px 0;
     box-shadow: 2px 2px 5px gray;
-    border-radius: 10px;
 }
 
 th, td {
@@ -127,6 +151,10 @@ input, select {
     max-width: 100%;
 }
 
+input:focus, select:focus {
+    outline: 2px solid orange;
+}
+
 /* Cards */
 .card {
     background-color: white;
@@ -137,6 +165,7 @@ input, select {
     box-shadow: 2px 2px 5px gray;
 }
 
+<<<<<<< HEAD
 /* Match Cards - CSS Grid */
 .match-grid {
     display: grid;
@@ -181,6 +210,29 @@ input, select {
 }
 
 #booking form {
+=======
+/* Booking Summary */
+#summary {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+#summary h3 {
+    color: navy;
+}
+
+#totalAmount {
+    color: green;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(5, 5, 36);
+    color: white;
+    text-align: center;
+    padding: 20px;
+>>>>>>> 631204f8628b486bfdb8c49587fde3b375c3adf1
     margin-top: 20px;
 }
 
@@ -221,10 +273,12 @@ footer {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
 }
+<<<<<<< HEAD
 
 /* Tablet View */
 @media screen and (max-width: 900px) {
@@ -312,3 +366,5 @@ footer {
     }
 
 }
+=======
+>>>>>>> 631204f8628b486bfdb8c49587fde3b375c3adf1
