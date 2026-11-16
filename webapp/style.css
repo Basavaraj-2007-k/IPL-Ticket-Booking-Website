@@ -9,42 +9,83 @@ body {
 
 /* Navigation Bar */
 header {
-    background-color: navy;
+    background-color: rgb(36, 36, 38);
     color: white;
     padding: 15px;
     position: relative;
-    width: 100%;
-    top: 0;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 10px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 15px;
+    margin: 5px;
 }
 
 nav a:hover {
     color: orange;
 }
 
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
 /* Hero Section */
 .hero {
-    background: linear-gradient(to right, navy, blue);
+    background: linear-gradient(to right, navy, rgb(97, 97, 226));
     color: white;
     text-align: center;
     padding: 100px 20px;
-    margin-top: 60px;
 }
 
 /* Buttons */
 .btn {
+    display: inline-block;
     background-color: orange;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
     margin: 10px;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover,
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* Sections */
+section {
+    padding: 25px;
 }
 
 /* Tables */
@@ -83,6 +124,7 @@ input, select {
     margin: 8px;
     border-radius: 5px;
     border: 1px solid gray;
+    max-width: 100%;
 }
 
 /* Cards */
@@ -95,19 +137,44 @@ input, select {
     box-shadow: 2px 2px 5px gray;
 }
 
-/* Footer */
-footer {
-    background-color: navy;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 5px;
-    border: 1px solid gray;
-    box-shadow: 2px 2px 5px gray;
+/* Match Cards - CSS Grid */
+.match-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
 
-/* Booking page spacing fix */
+.match-card {
+    margin: 10px;
+}
+
+/* List View */
+.match-grid.list-view {
+    display: flex;
+    flex-direction: column;
+}
+
+.match-grid.list-view .match-card {
+    width: auto;
+}
+
+/* Grid and List Buttons */
+.view-buttons {
+    margin: 20px 0;
+}
+
+.view-buttons button.active {
+    background-color: navy;
+}
+
+/* Guidelines - CSS Grid */
+.guidelines-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+/* Booking page spacing */
 #booking {
     margin-top: 30px;
     padding: 25px;
@@ -115,6 +182,18 @@ footer {
 
 #booking form {
     margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(5, 5, 36);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 5px gray;
 }
 
 /* Toast Notification */
@@ -135,7 +214,7 @@ footer {
 /* Show Toast */
 .toast.show {
     visibility: visible;
-    animation: fadeIn 0.5s, fadeOut 0.5s 2.5s;
+    animation: fadeIn 0.5s;
 }
 
 @keyframes fadeIn {
@@ -147,13 +226,89 @@ footer {
     }
 }
 
-@keyframes fadeOut {
-    from {
-        opacity: 1;
+/* Tablet View */
+@media screen and (max-width: 900px) {
+
+    .match-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
-    to {
-        opacity: 0;
+
+    .guidelines-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
+
 }
 
+/* Mobile View */
+@media screen and (max-width: 600px) {
 
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        margin-top: 15px;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    nav a {
+        padding: 8px;
+        margin: 5px 0;
+    }
+
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .match-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .guidelines-grid {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    input, select {
+        width: 90%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+
+    .toast {
+        right: 10px;
+        bottom: 10px;
+        min-width: 200px;
+    }
+
+}
