@@ -1,0 +1,279 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f5f9;
+  color: #222;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Navbar */
+
+.navbar {
+  background: #151538;
+  color: white;
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 25px;
+}
+
+.logo span {
+  color: #ffb703;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.nav-links button:hover {
+  color: #ffb703;
+}
+
+/* Hero */
+
+
+.hero {
+  min-height: 350px;
+  background: linear-gradient(
+    120deg,
+    #5b5566,
+    #bef15e
+  );
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 8%;
+}
+
+
+.hero-content h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.hero button,
+.welcome button {
+  background: #ffb703;
+  border: none;
+  padding: 13px 25px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hero button:hover,
+.welcome button:hover {
+  background: #f59e0b;
+}
+
+/* Welcome */
+
+.welcome {
+  text-align: center;
+  padding: 55px 20px;
+}
+
+.welcome h2 {
+  margin-bottom: 15px;
+}
+
+.welcome p {
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* Matches */
+
+.matches {
+  padding: 40px 7%;
+  text-align: center;
+}
+
+.matches h1 {
+  margin-bottom: 30px;
+  color: #151538;
+}
+
+.match-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  );
+  gap: 25px;
+}
+
+/* Match Card */
+
+.match-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.match-card h3 {
+  color: #4b247a;
+  margin-bottom: 20px;
+}
+
+.match-card p {
+  margin-bottom: 15px;
+}
+
+.match-card button,
+.booking-form button {
+  background: #151538;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.match-card button:hover,
+.booking-form button:hover {
+  background: #4b247a;
+}
+
+/* Booking Form */
+
+.book-ticket {
+  padding: 50px 20px;
+}
+
+.booking-form {
+  max-width: 450px;
+  margin: auto;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.booking-form h2,
+.booking-form h3 {
+  margin-bottom: 20px;
+}
+
+.booking-form label {
+  display: block;
+  margin: 15px 0 8px;
+}
+
+.booking-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.booking-form button {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Booking History */
+
+.history {
+  padding: 40px 7%;
+}
+
+.history h1 {
+  margin-bottom: 25px;
+}
+
+.history-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.history-card h3 {
+  color: #4b247a;
+  margin-bottom: 15px;
+}
+
+.history-card p {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+
+.footer {
+  background: #151538;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 30px;
+}
+
+.footer h3 {
+  color: #ffb703;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 8px 0;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .hero {
+    min-height: 300px;
+  }
+}
