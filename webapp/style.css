@@ -13,7 +13,6 @@ header {
     color: white;
     padding: 15px;
     position: relative;
-<<<<<<< HEAD
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,11 +27,9 @@ nav {
     display: flex;
     align-items: center;
     gap: 15px;
-=======
     width: 100%;
     box-sizing: border-box;
     top: 0;
->>>>>>> 631204f8628b486bfdb8c49587fde3b375c3adf1
 }
 
 nav a {
@@ -165,7 +162,6 @@ input:focus, select:focus {
     box-shadow: 2px 2px 5px gray;
 }
 
-<<<<<<< HEAD
 /* Match Cards - CSS Grid */
 .match-grid {
     display: grid;
@@ -210,7 +206,6 @@ input:focus, select:focus {
 }
 
 #booking form {
-=======
 /* Booking Summary */
 #summary {
     max-width: 500px;
@@ -232,7 +227,6 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
->>>>>>> 631204f8628b486bfdb8c49587fde3b375c3adf1
     margin-top: 20px;
 }
 
@@ -278,7 +272,7 @@ footer {
         opacity: 1;
     }
 }
-<<<<<<< HEAD
+
 
 /* Tablet View */
 @media screen and (max-width: 900px) {
@@ -366,5 +360,4 @@ footer {
     }
 
 }
-=======
->>>>>>> 631204f8628b486bfdb8c49587fde3b375c3adf1
+}
